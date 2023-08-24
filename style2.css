@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,400;10..48,500;10..48,600&display=swap');
+@charset "UTF-8"
+
+*{
+ text-decoration: none;
+}
+
+
+
+
+  :root {
+ --bg-color: #0e1a23;
+ --second-bg-color: #112e42;
+ --text-color: #ededed;
+ --main-color: #00abd0;
+ }
+
+
+html,body {
+    background-color: var(--bg-color);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    }
+
+    
+
+ main{
+  position: relative;
+  height: 100vh;
+  background-color: #0e1a23;
+  
+
+}
+
+section#telefone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 627px;
+    width: 311px;
+    background: url('/image/frame-iphone.png');
+    background-repeat: no-repeat
+    
+}
+
+
+iframe#tela {
+    position: relative;
+    height: 337px;
+    top: 144px;
+    left: 59px;
+    width: 189px;
+}
+
+section#redes-sociais{
+    position: absolute;
+    transform: translate(267%, 35%);
+    
+}
+
+section#redes-sociais img{
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.49);
+    width: 34px;
+    margin: 5px;  
+    box-sizing: border-box;  
+    
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.673);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5 px 10px rgba(0, 0, 0, 0.495);
+    transition: trasform .3s;
+}
+
+
+#menu-icon {
+    position: absolute;
+    font-size: 23px;
+    right: 30px;
+    margin-top: 41px;
+    color: #00abd0;
+}
+
+.navbar {
+    display: flex;
+    position: absolute;
+    top: 10%;
+    right: 30px;
+    width: 85px;
+    height: 27vh;
+    align-items: center;
+    flex-direction: column;
+    transition: all .55s ease;
+}
+.navbar a {
+    margin-left: 0;
+    display: block;
+    margin: 4px 0;
+    padding-top: 5px;
+}
+.navbar.open {
+ right: 0;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+}
+
+
+@media (max-width: 990px){
+    #menu-icon {
+        font-size: 1.6rem;
+        display: block;
+        color: var(--main-color);
+        cursor: pointer;
+    }
+    .navbar {
+        position: absolute;
+        width: 47px;
+        height: 31vh;
+        background: none;
+        align-items: center;
+        transition: all .55s ease;
+    }
+    .navbar a {
+        color: white;
+        margin-left: 0;
+        display: block;
+        margin: 7px 0;
+        padding-top: 5px;
+    }
+    .navbar.open {
+     right: 0;
+    }
+    
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

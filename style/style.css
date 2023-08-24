@@ -1,0 +1,293 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,400;10..48,500;10..48,600&display=swap');
+
+
+*{
+
+ text-decoration: none;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+  :root {
+ --bg-color: #0e1a23;
+ --second-bg-color: #112e42;
+ --text-color: #ededed;
+ --main-color: #00abd0;
+ }
+
+
+body {
+    background-color: var(--bg-color);
+    margin: auto;
+}
+
+.header {
+    position: fixed;
+    font-family: 'Bricolage Grotesque', sans-serif;;
+    top: 0;
+    left: 0;
+    width: 73%;
+    height: auto;
+    padding: 30px 9%;
+    padding-top: 40px;
+    background: transparent;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    z-index: 100;
+
+}
+
+section {
+    margin-top: 49px;
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    text-align: center;
+}
+
+
+
+.image-container img {
+    
+    width: 220px;
+    padding-left: 50px;
+    height: auto; 
+  }
+
+img {
+    max-width: 640px;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+h1{
+    background-image: linear-gradient(to right, white, #f1f1f1d2,#d4d4d4 );
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    font-size: 73px;
+    margin: 0;
+    padding-top: 63px;
+    
+}
+
+.home-content .text-animate {
+    position: relative;
+    
+}
+
+.home-content .text-animate h3 {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 600;
+    color: transparent;
+    -webkit-text-stroke: .7px var(--main-color);
+    margin-bottom: 20px
+}
+
+#menu-icon {
+    display: none;
+}
+
+
+
+
+.home-content{
+display: flex;
+
+
+}
+
+
+.circle {
+  display: inline-block;
+  font-size: 34px;
+  margin-left: 30px;
+  font-family:'Bricolage Grotesque', sans-serif;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  line-height: 34px;
+  color:var(--main-color);
+}
+
+span{
+    background-image: linear-gradient(to right, var(--main-color), #f1f1f1d2,#d4d4d4 );
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+}
+
+.R {
+    margin: 0;
+    width: 62%;
+    
+
+}
+
+p {
+    color: white;
+    margin: 0;
+    font-size: 13px;
+    
+}
+
+.home-content p {
+    padding-left: 40px;
+    text-align: justify;
+    color: white;
+    margin: 0;
+    font-size: 13px;
+}
+
+h3{
+    color: aliceblue;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    font-size: 9px;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 1.5rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+}
+
+@media (max-width: 990px){
+#menu-icon {
+    font-size: 1.6rem;
+    display: block;
+    color: var(--main-color);
+    cursor: pointer;
+}
+.navbar {
+    position: absolute;
+    top: 61%;
+    right: 54px;
+    width: 85px;
+    height: 27vh;
+    background: #00aad04d;
+    align-items: center;
+    flex-direction: column;
+    transition: all .55s ease;
+}
+.navbar a {
+    margin-left: 0;
+    display: block;
+    margin: 7px 0;
+    padding-top: 5px;
+}
+.navbar.open {
+ right: 0;
+}
+
+.R{
+    position: relative;
+    right:29px;
+    top: 6px;
+    
+}
+
+img {
+    display: none;
+}
+}
+
+
+
+.home-sci {
+    bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a:hover {
+    color: var(--bg-color);
+}
+
+.home-sci a::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: var(--main-color);
+        z-index: -1;
+        transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
